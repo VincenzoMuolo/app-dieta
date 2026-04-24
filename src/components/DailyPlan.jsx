@@ -6,7 +6,7 @@ import { ChevronRight, Droplets, Flame, Beef, Wheat } from 'lucide-react';
 const DailyPlan = ({ dietPlan, selectedDay, setSelectedDay }) => {
   const days = ['Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
   const dayPlan = dietPlan.days[selectedDay];
-  
+
   const stats = calculateDailyNutrition(dayPlan);
 
   const slideVariants = {
@@ -19,8 +19,6 @@ const DailyPlan = ({ dietPlan, selectedDay, setSelectedDay }) => {
     <>
       <div className="app-header">
         <h1 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '8px' }}>Il Tuo Piano</h1>
-        <p className="muted">Seleziona il giorno per vedere i dettagli</p>
-        
         <div className="day-selector">
           {days.map(day => (
             <button
@@ -76,7 +74,7 @@ const DailyPlan = ({ dietPlan, selectedDay, setSelectedDay }) => {
                   <div className="meal-header">
                     <h3>{mealName}</h3>
                   </div>
-                  
+
                   {items.map((item, idx) => (
                     <div key={idx} className="food-item">
                       <div className="food-name">{item.name}</div>
