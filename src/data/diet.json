@@ -1,0 +1,663 @@
+{
+  "notes": [
+    "In una giornata alimentare tutti gli alimenti scritti vanno mangiati non sono scelte se allo spuntino, ci sono 2 alimenti vanno mangiati entrambi.",
+    "Frutta e verdura non vanno pesate anche se troverai le grammature.",
+    "I frutti più grandi, ne mangerai uno: una mela, una pera, una banana, una pesca, un percoco, un’arancia. Se le pesche sono medie 2, 2 kiwi, 2 clementine, 3-4 albicocche, 3-4 nespole, un pugnetto di fragole, uno di ciliegie, 200 g di anguria.",
+    "Importante è che tu pesi pasta, pane, pesce, carne formaggi e salumi e presta attenzione all’olio.",
+    "La verdura la puoi scambiare liberamente (es se c’è scritto lattuga potrai mangiare gli spinaci o le zucchine).",
+    "I legumi secchi, fave, ceci, fagioli e lenticchie li potrai scambiare fra loro nella stessa grammatura. Ricorda che i legumi in cottura triplicano il peso (es. 80 g secchi = 240g cotti) i piselli 150 g surgelati.",
+    "Per condire le pietanze oltre all’olio segnato puoi usare aceto, limone e spezie.",
+    "Il caffè puoi berne più di 1 al giorno meglio se amaro.",
+    "Potrai scambiare fra loro con la stessa grammatura pasta, pane, riso o altro cereale.",
+    "E’ possibile scambiare fra loro anche pranzi e cene della stessa giornata o lo spuntino mattina pomeriggio.",
+    "E’ possibile anche scambiare le intere giornate Lunedi con Venerdi e viceversa.",
+    "La domenica potrai mangiare quello che vuoi prestando attenzione alle quantità.",
+    "Mi raccomando fattori importante e non trascurabile è l’idratazione bevi almeno un litro e mezzo di acqua al giorno."
+  ],
+  "days": {
+    "Lunedì": {
+      "Colazione": [
+        {
+          "name": "Caffè espresso in tazza",
+          "quantityStr": "1",
+          "unit": "tazzine",
+          "grams": 30
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "fette",
+          "grams": 50
+        },
+        {
+          "name": "Marmellata con poco zucchero",
+          "quantityStr": "2",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Burro di arachidi",
+          "quantityStr": "2",
+          "unit": "cucchiaini",
+          "grams": 10
+        }
+      ],
+      "Pranzo": [
+        {
+          "name": "Finocchi",
+          "quantityStr": "½",
+          "unit": "porzioni",
+          "grams": 50
+        },
+        {
+          "name": "Pasta di semola",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 80
+        },
+        {
+          "name": "Verdura cotta",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 100
+        },
+        {
+          "name": "Grana Padano",
+          "quantityStr": "2",
+          "unit": "cucchiai",
+          "grams": 20
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Spuntino Pomeriggio": [
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Noci secche",
+          "quantityStr": "1",
+          "unit": "¼ pezzi",
+          "grams": 20
+        },
+        {
+          "name": "Yogurt greco aromatizzato (0% lipidi)",
+          "quantityStr": "¾",
+          "unit": "vasetti",
+          "grams": 150
+        }
+      ],
+      "Cena": [
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "½ fette",
+          "grams": 80
+        },
+        {
+          "name": "Zucchine",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 200
+        },
+        {
+          "name": "Vitello (carne magra)",
+          "quantityStr": "1",
+          "unit": "¾ porzioni",
+          "grams": 180
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        }
+      ]
+    },
+    "Martedì": {
+      "Colazione": [
+        {
+          "name": "Caffè espresso in tazza",
+          "quantityStr": "1",
+          "unit": "tazzine",
+          "grams": 30
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "fette",
+          "grams": 50
+        },
+        {
+          "name": "Marmellata con poco zucchero",
+          "quantityStr": "2",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Burro di arachidi",
+          "quantityStr": "2",
+          "unit": "cucchiaini",
+          "grams": 10
+        }
+      ],
+      "Pranzo": [
+        {
+          "name": "Finocchi",
+          "quantityStr": "½",
+          "unit": "porzioni",
+          "grams": 50
+        },
+        {
+          "name": "Riso parboiled",
+          "quantityStr": "¾",
+          "unit": "porzioni",
+          "grams": 80
+        },
+        {
+          "name": "Piselli surgelati",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Uova di gallina",
+          "quantityStr": "1",
+          "unit": "pezzi",
+          "grams": 50
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Spuntino Pomeriggio": [
+        {
+          "name": "Noci secche",
+          "quantityStr": "2",
+          "unit": "pezzi",
+          "grams": 30
+        },
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Yogurt greco aromatizzato (0% lipidi)",
+          "quantityStr": "¾",
+          "unit": "vasetti",
+          "grams": 150
+        }
+      ],
+      "Cena": [
+        {
+          "name": "Finocchi",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 100
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "½ fette",
+          "grams": 80
+        },
+        {
+          "name": "Pollo (petto)",
+          "quantityStr": "1",
+          "unit": "¾ porzioni",
+          "grams": 180
+        },
+        {
+          "name": "Lattuga",
+          "quantityStr": "10",
+          "unit": "foglie",
+          "grams": 100
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        }
+      ]
+    },
+    "Mercoledì": {
+      "Colazione": [
+        {
+          "name": "Caffè espresso in tazza",
+          "quantityStr": "1",
+          "unit": "tazzine",
+          "grams": 30
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "fette",
+          "grams": 50
+        },
+        {
+          "name": "Marmellata con poco zucchero",
+          "quantityStr": "2",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Burro di arachidi",
+          "quantityStr": "2",
+          "unit": "cucchiaini",
+          "grams": 10
+        }
+      ],
+      "Spuntino Mattina": [
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Pranzo": [
+        {
+          "name": "Carote",
+          "quantityStr": "4",
+          "unit": "pezzi",
+          "grams": 200
+        },
+        {
+          "name": "Pasta di semola",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 80
+        },
+        {
+          "name": "Tonno sott'olio sgocciolato",
+          "quantityStr": "1",
+          "unit": "½ porzioni",
+          "grams": 75
+        },
+        {
+          "name": "Pomodori",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 100
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Spuntino Pomeriggio": [
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "fette",
+          "grams": 50
+        },
+        {
+          "name": "Bresaola",
+          "quantityStr": "5",
+          "unit": "fette",
+          "grams": 50
+        }
+      ],
+      "Cena": [
+        {
+          "name": "Cetrioli",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 100
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "½ fette",
+          "grams": 80
+        },
+        {
+          "name": "Merluzzo",
+          "quantityStr": "1",
+          "unit": "¼ porzioni",
+          "grams": 200
+        },
+        {
+          "name": "Lattuga",
+          "quantityStr": "10",
+          "unit": "foglie",
+          "grams": 100
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        }
+      ]
+    },
+    "Giovedì": {
+      "Colazione": [
+        {
+          "name": "Caffè espresso in tazza",
+          "quantityStr": "1",
+          "unit": "tazzine",
+          "grams": 30
+        },
+        {
+          "name": "Yogurt greco aromatizzato (0% lipidi)",
+          "quantityStr": "1",
+          "unit": "vasetti",
+          "grams": 170
+        },
+        {
+          "name": "Magretti frollini gocce di cioccolato - Galbusera",
+          "quantityStr": "4",
+          "unit": "biscotti",
+          "grams": 22
+        }
+      ],
+      "Spuntino Mattina": [
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Pranzo": [
+        {
+          "name": "Riso parboiled",
+          "quantityStr": "¾",
+          "unit": "porzioni",
+          "grams": 80
+        },
+        {
+          "name": "Gamberetti surgelati",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Zucchine",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 200
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Spuntino Pomeriggio": [
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Noci secche",
+          "quantityStr": "1",
+          "unit": "¼ pezzi",
+          "grams": 20
+        }
+      ],
+      "Cena": [
+        {
+          "name": "Cetrioli",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 100
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "fette",
+          "grams": 50
+        },
+        {
+          "name": "Patate",
+          "quantityStr": "2",
+          "unit": "¾ porzioni",
+          "grams": 280
+        },
+        {
+          "name": "Pollo, coscia",
+          "quantityStr": "1",
+          "unit": "¼ porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        }
+      ]
+    },
+    "Venerdì": {
+      "Colazione": [
+        {
+          "name": "Caffè espresso in tazza",
+          "quantityStr": "1",
+          "unit": "tazzine",
+          "grams": 30
+        },
+        {
+          "name": "taralli",
+          "quantityStr": "1",
+          "unit": "bustina",
+          "grams": 40
+        },
+        {
+          "name": "Noci secche",
+          "quantityStr": "2",
+          "unit": "pezzi",
+          "grams": 30
+        }
+      ],
+      "Pranzo": [
+        {
+          "name": "Cetrioli",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 100
+        },
+        {
+          "name": "Pasta di semola",
+          "quantityStr": "¾",
+          "unit": "porzioni",
+          "grams": 60
+        },
+        {
+          "name": "Lenticchie secche",
+          "quantityStr": "1",
+          "unit": "½ porzioni",
+          "grams": 80
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        },
+        {
+          "name": "Fragole",
+          "quantityStr": "½",
+          "unit": "porzioni",
+          "grams": 100
+        }
+      ],
+      "Spuntino Pomeriggio": [
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Cena": [
+        {
+          "name": "Carote",
+          "quantityStr": "4",
+          "unit": "pezzi",
+          "grams": 200
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "½ fette",
+          "grams": 80
+        },
+        {
+          "name": "Tacchino (petto)",
+          "quantityStr": "1",
+          "unit": "½ porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Fagiolini",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Olio di oliva extra vergine",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        }
+      ]
+    },
+    "Sabato": {
+      "Colazione": [
+        {
+          "name": "Caffè espresso in tazza",
+          "quantityStr": "1",
+          "unit": "tazzine",
+          "grams": 30
+        },
+        {
+          "name": "Yogurt greco aromatizzato (0% lipidi)",
+          "quantityStr": "¾",
+          "unit": "vasetti",
+          "grams": 150
+        },
+        {
+          "name": "Magretti frollini gocce di cioccolato - Galbusera",
+          "quantityStr": "4",
+          "unit": "biscotti",
+          "grams": 22
+        }
+      ],
+      "Pranzo": [
+        {
+          "name": "Finocchi",
+          "quantityStr": "½",
+          "unit": "porzioni",
+          "grams": 50
+        },
+        {
+          "name": "Pane integrale",
+          "quantityStr": "1",
+          "unit": "½ fette",
+          "grams": 80
+        },
+        {
+          "name": "Lattuga",
+          "quantityStr": "20",
+          "unit": "foglie",
+          "grams": 200
+        },
+        {
+          "name": "Salmone d'allevamento",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        },
+        {
+          "name": "Olio di oliva",
+          "quantityStr": "4",
+          "unit": "cucchiaini",
+          "grams": 20
+        }
+      ],
+      "Spuntino Pomeriggio": [
+        {
+          "name": "Frutta fresca",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 150
+        }
+      ],
+      "Cena": [
+        {
+          "name": "Pizza Margherita",
+          "quantityStr": "1",
+          "unit": "pezzi",
+          "grams": 350
+        },
+        {
+          "name": "Prosciutto cotto magro",
+          "quantityStr": "5",
+          "unit": "fette",
+          "grams": 50
+        },
+        {
+          "name": "Funghi champignon",
+          "quantityStr": "1",
+          "unit": "porzioni",
+          "grams": 100
+        }
+      ]
+    },
+    "Domenica": {
+      "Giornata Libera": [
+        {
+          "name": "Pasto Libero",
+          "quantityStr": "1",
+          "unit": "giornata",
+          "grams": 0
+        }
+      ]
+    }
+  }
+}
