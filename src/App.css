@@ -5,30 +5,42 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(15, 17, 21, 0.95);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: var(--bg-color) !important;
     border-bottom: 1px solid var(--glass-border);
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
 }
 
-.day-selector {
+.day-selector-container {
     display: flex;
-    overflow-x: auto;
-    gap: 12px;
-    padding: 4px 0 16px;
-    margin: 0 -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    scroll-snap-type: x mandatory;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 100px;
+    padding: 6px;
 }
 
-.day-selector::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for this container */
+.day-bubble {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.day-item {
-    scroll-snap-align: center;
-    flex-shrink: 0;
+.day-bubble.active {
+    background: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    transform: scale(1.05);
 }
 
 .bottom-nav {
@@ -42,18 +54,21 @@
     justify-content: space-around;
     padding: 12px 8px;
     z-index: 100;
-    background: rgba(15, 17, 21, 0.95);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: var(--bg-color) !important;
     border: 1px solid var(--glass-border);
     border-radius: 16px;
     box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.5);
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
 }
 
 .nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex: 1;
     gap: 4px;
     color: var(--text-muted);
     background: transparent;
@@ -98,11 +113,101 @@
     color: var(--accent-color);
 }
 
+.meal-time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: rgba(255,255,255,0.05);
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.current-meal-highlight {
+    border-color: var(--accent-color);
+    box-shadow: inset 4px 0 0 var(--accent-color), 0 8px 30px rgba(59, 130, 246, 0.15);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
 .food-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
+}
+
+.substitution-container {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    padding: 6px;
+    margin-top: -4px;
+}
+
+.substitution-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.substitution-toggle:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.meal-subsection {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--glass-border);
+}
+
+.subsection-header {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+}
+
+.substitution-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 8px 8px;
+    margin-top: 4px;
+    border-top: 1px dashed var(--glass-border);
+}
+
+.substitution-title {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.substitution-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.sub-name {
+    color: var(--text-color);
+}
+
+.sub-amount {
+    font-weight: 700;
+    color: var(--accent-color);
 }
 
 .food-name {
