@@ -68,7 +68,7 @@
           "grams": 20
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -120,7 +120,7 @@
           "grams": 180
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -180,7 +180,7 @@
           "grams": 50
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -238,7 +238,7 @@
           "grams": 100
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -306,7 +306,7 @@
           "grams": 100
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -358,7 +358,7 @@
           "grams": 100
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -414,7 +414,7 @@
           "grams": 200
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -460,13 +460,13 @@
           "grams": 280
         },
         {
-          "name": "Pollo, coscia",
+          "name": "Pollo (Coscia)",
           "quantityStr": "1",
           "unit": "¼ porzioni",
           "grams": 150
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
@@ -514,14 +514,14 @@
           "grams": 80
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20
         },
         {
-          "name": "Fragole",
-          "quantityStr": "½",
+          "name": "Frutta fresca",
+          "quantityStr": "1",
           "unit": "porzioni",
           "grams": 100
         }
@@ -560,7 +560,7 @@
           "grams": 150
         },
         {
-          "name": "Olio di oliva extra vergine",
+          "name": "Olio di oliva",
           "quantityStr": "4",
           "unit": "cucchiaini",
           "grams": 20

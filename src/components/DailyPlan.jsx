@@ -66,12 +66,12 @@ const DailyPlan = ({ dietPlan, setDietPlan, customSubstitutions, setCustomSubsti
   const [editForm, setEditForm] = useState({ name: '', grams: '' });
   const mealRefs = useRef({});
 
-  const startEditing = (mealName, idx, item) => {
-    setEditingItem(`${selectedDay}-${mealName}-${idx}`);
+  const startEditing = (mealName, idx, item, groupName) => {
+    setEditingItem(`${selectedDay}-${mealName}-${groupName}-${idx}`);
     setEditForm({ name: '', grams: '' });
   };
 
-  const saveEditing = (mealName, idx, itemName) => {
+  const saveEditing = (mealName, idx, itemName, groupName) => {
     if (!editForm.name.trim()) return;
 
     setCustomSubstitutions(prev => {
@@ -83,12 +83,12 @@ const DailyPlan = ({ dietPlan, setDietPlan, customSubstitutions, setCustomSubsti
     });
 
     setEditingItem(null);
-    const key = `${selectedDay}-${mealName}-${idx}`;
+    const key = `${selectedDay}-${mealName}-${groupName}-${idx}`;
     setExpandedSubstitutions(prev => ({ ...prev, [key]: true }));
   };
 
-  const toggleSubstitution = (mealName, idx) => {
-    const key = `${selectedDay}-${mealName}-${idx}`;
+  const toggleSubstitution = (mealName, idx, groupName) => {
+    const key = `${selectedDay}-${mealName}-${groupName}-${idx}`;
     setExpandedSubstitutions(prev => ({
       ...prev,
       [key]: !prev[key]
@@ -200,7 +200,7 @@ const DailyPlan = ({ dietPlan, setDietPlan, customSubstitutions, setCustomSubsti
                 const olioItems = items.filter(i => i.name.toLowerCase().includes('olio'));
 
                 const renderFoodItem = (item, idx, groupName, hideName = false) => {
-                  const subs = getSubstitutionsFor(item.name, item.grams) || [];
+                  let subs = getSubstitutionsFor(item.name, item.grams) || [];
                   if (customSubstitutions && customSubstitutions[item.name]) {
                     subs = [...subs, ...customSubstitutions[item.name]];
                   }
@@ -235,7 +235,7 @@ const DailyPlan = ({ dietPlan, setDietPlan, customSubstitutions, setCustomSubsti
                             <button onClick={() => setEditingItem(null)} style={{ padding: '8px', background: 'rgba(239, 68, 68, 0.2)', color: '#ef4444', border: 'none', borderRadius: '8px', cursor: 'pointer' }}>
                               <X size={18} />
                             </button>
-                            <button onClick={() => saveEditing(mealName, idx, item.name)} style={{ padding: '8px', background: 'var(--accent-color)', color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer' }}>
+                            <button onClick={() => saveEditing(mealName, idx, item.name, groupName)} style={{ padding: '8px', background: 'var(--accent-color)', color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer' }}>
                               <Check size={18} />
                             </button>
                           </div>
@@ -247,7 +247,7 @@ const DailyPlan = ({ dietPlan, setDietPlan, customSubstitutions, setCustomSubsti
                             {subs && subs.length > 0 && (
                               <button
                                 className="substitution-toggle"
-                                onClick={() => toggleSubstitution(mealName, idx)}
+                                onClick={() => toggleSubstitution(mealName, idx, groupName)}
                                 title="Vedi alternative"
                                 style={{ padding: '4px' }}
                               >
@@ -262,7 +262,7 @@ const DailyPlan = ({ dietPlan, setDietPlan, customSubstitutions, setCustomSubsti
                               )}
                             </div>
                             {isProtein && (
-                              <button onClick={() => startEditing(mealName, idx, item)} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '4px' }} title="Aggiungi alternativa">
+                              <button onClick={() => startEditing(mealName, idx, item, groupName)} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '4px', display: 'flex', alignItems: 'center' }} title="Aggiungi alternativa">
                                 <PlusCircle size={16} />
                               </button>
                             )}
@@ -316,20 +316,20 @@ const DailyPlan = ({ dietPlan, setDietPlan, customSubstitutions, setCustomSubsti
                     </div>
 
                     <div className="meal-main-items">
-                      {mainItems.map((item, idx) => renderFoodItem(item, idx, 'main'))}
+                      {mainItems.map((item) => renderFoodItem(item, items.indexOf(item), 'main'))}
                     </div>
 
-                    {paneItems.length > 0 && paneItems.map((item, idx) => (
-                      <div key={idx} className="meal-subsection pane-section" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
+                    {paneItems.length > 0 && paneItems.map((item) => (
+                      <div key={items.indexOf(item)} className="meal-subsection pane-section" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
                         <div className="subsection-header" style={{ marginBottom: 0 }}>{item.name}</div>
-                        {renderFoodItem(item, idx, 'pane', true)}
+                        {renderFoodItem(item, items.indexOf(item), 'pane', true)}
                       </div>
                     ))}
 
-                    {olioItems.length > 0 && olioItems.map((item, idx) => (
-                      <div key={idx} className="meal-subsection olio-section" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
+                    {olioItems.length > 0 && olioItems.map((item) => (
+                      <div key={items.indexOf(item)} className="meal-subsection olio-section" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
                         <div className="subsection-header" style={{ marginBottom: 0 }}>{item.name}</div>
-                        {renderFoodItem(item, idx, 'olio', true)}
+                        {renderFoodItem(item, items.indexOf(item), 'olio', true)}
                       </div>
                     ))}
                   </div>

@@ -2,14 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/icon.png" />
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#0f1115" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Diet App</title>
+    <style>
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      .loader-logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 24px;
+        animation: pulse 2s infinite ease-in-out;
+      }
+      .loader-bar {
+        width: 120px;
+        height: 2px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+      }
+      .loader-progress {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, #10b981, transparent);
+        animation: loading 1.5s infinite ease-in-out;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.1); opacity: 1; }
+      }
+      @keyframes loading {
+        0% { left: -40%; }
+        100% { left: 100%; }
+      }
+    </style>
   </head>
   <body>
+    <div id="loading-screen">
+      <img src="/icon.png" alt="Logo" class="loader-logo">
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Remove loading screen when React is ready
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('loading-screen');
+        setTimeout(() => {
+          loader.style.opacity = '0';
+          setTimeout(() => loader.remove(), 500);
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
